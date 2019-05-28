@@ -1,0 +1,53 @@
+{
+  "name": "BatteryManager",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "connect": "adb connect 10.0.0.6:5555",
+    "test": "jest",
+    "run-android": "react-native run-android",
+    "run-ios": "react-native run-ios"
+  },
+  "dependencies": {
+    "formik": "^1.5.7",
+    "react": "16.8.3",
+    "react-native": "0.59.8",
+    "react-native-formik": "^1.7.5",
+    "react-native-gesture-handler": "^1.2.1",
+    "react-native-material-textfield": "^0.12.0",
+    "react-native-material-ui": "^1.30.1",
+    "react-native-uuid": "^1.4.9",
+    "react-native-vector-icons": "^4.6.0",
+    "react-navigation": "^3.11.0",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-native": "^1.0.0",
+    "redux-saga": "^1.0.2",
+    "reselect": "^4.0.0",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/runtime": "7.4.4",
+    "@types/jest": "24.0.13",
+    "@types/react": "16.8.17",
+    "@types/react-native": "^0.57.58",
+    "@types/react-native-material-textfield": "^0.12.3",
+    "@types/react-native-material-ui": "^1.31.1",
+    "@types/react-native-vector-icons": "^6.4.0",
+    "@types/react-navigation": "^3.0.7",
+    "@types/react-redux": "^7.0.9",
+    "@types/redux-logger": "^3.0.7",
+    "babel-jest": "24.8.0",
+    "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "react-devtools": "^3.6.1",
+    "react-test-renderer": "16.8.3",
+    "typescript": "3.4.5"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
