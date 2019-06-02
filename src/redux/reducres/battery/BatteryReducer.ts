@@ -3,11 +3,13 @@ import {BatteryActionI} from "../../actions/battery/BatteryActionInterfaces";
 import BatteryActionType from "../../actions/battery/BatteryActionType";
 
 export interface State {
-    batteries: Array<Battery>;
+    batteries: Array<Battery>,
+    loading: boolean
 }
 
 export const initialState: State = {
-    batteries: new Array<Battery>()
+    batteries: new Array<Battery>(),
+    loading: false
 };
 
 export function reducer(state: State = initialState, action: BatteryActionI) {
@@ -24,7 +26,7 @@ export function reducer(state: State = initialState, action: BatteryActionI) {
         }
 
         case BatteryActionType.GET_BATTERY_RECEIVED: {
-            return {...state, batteries: [...state.batteries, action.data], loading: true}
+            return {...state, batteries: [...state.batteries, action.data], loading: false}
         }
 
         case BatteryActionType.ADD_BATTERY_REQUEST: {
@@ -32,7 +34,7 @@ export function reducer(state: State = initialState, action: BatteryActionI) {
         }
 
         case BatteryActionType.ADD_BATTERY_RECEIVED: {
-            return {...state, batteries: [...state.batteries, action.data], loading: true}
+            return {...state, batteries: [...state.batteries, action.data], loading: false}
         }
 
         default:

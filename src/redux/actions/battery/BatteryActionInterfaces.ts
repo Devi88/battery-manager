@@ -15,7 +15,7 @@ export interface GetBatteryRequestActionI {
     type: BatteryActionType.GET_BATTERY_REQUEST
 }
 
-export interface GetBatterysReceiveActionI {
+export interface GetBatteryReceiveActionI {
     type: BatteryActionType.GET_BATTERY_RECEIVED,
     data: Battery
 }
@@ -31,11 +31,6 @@ export interface AddBatteryReceivedActionI {
 }
 
 ////////////
-
-export interface AddBatteryActionI {
-    type: BatteryActionType.BATTERY_ADD,
-    data: Battery
-}
 
 export interface UpdateBatteryActionI {
     type: BatteryActionType.BATTERY_UPDATE,
@@ -54,13 +49,12 @@ export interface DeleteBatteryActionI {
 }
 
 export type BatteryActionI =
-    AddBatteryActionI
-    | UpdateBatteryActionI
+    UpdateBatteryActionI
     | EditBatteryActionI
     | DeleteBatteryActionI
     | GetBatteriesRequestActionI
     | GetBatteriesReceivedActionI
     | GetBatteryRequestActionI
-    | GetBatterysReceiveActionI
+    | GetBatteryReceiveActionI
     | AddBatteryRequestActionI
     | AddBatteryReceivedActionI

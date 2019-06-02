@@ -1,8 +1,9 @@
-import {BatteryActionWatch} from './saga.mock'
-import {all} from 'redux-saga/effects'
+import {all,fork} from 'redux-saga/effects'
 
-export const rootSaga = function* () {
+import * as batterySagas from "./battery_saga.mock";
+
+export default function* rootSaga() {
     yield all([
-        BatteryActionWatch()
-    ]);
+        ...Object.values(batterySagas)
+    ].map(fork));
 };

@@ -35,7 +35,6 @@ export default class BatteriesListComponent extends Component<Props> {
 
     render() {
         const batteries = this.props.batteries;
-
         return (
             <View style={styles.container}>
                 <FlatList data={batteries}
