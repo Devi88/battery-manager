@@ -1003,10 +1003,10 @@
     "@types/react" "*"
     "@types/react-native" "*"
 
-"@types/react-native-vector-icons@^6.4.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-4.6.2.tgz#b1f6fab20761658dce0ae30df54275b8ad00d081"
-  integrity sha512-DMqPdCu5TBW3PN39TGP1ChvCKUQmstKN6IQ0mOkC1Vc8Nd69DZfINLuySlczpHlW+0gG5Xu86HtfNBfzFVUSUg==
+"@types/react-native-vector-icons@^4.6.2":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-4.6.4.tgz#83c2d88f0c2615a44b9059eb75c11f92702c1ee2"
+  integrity sha512-G2JD98lrgjggA979WeTXlj6He1sN4Skpd4UJlcVDsD71u1yHf8raT9D7OP4vb3LZWX6ILYkVa4dzLtVkt4wyWA==
   dependencies:
     "@types/react" "*"
     "@types/react-native" "*"
@@ -4148,9 +4148,9 @@ lodash-es@^4.17.11, lodash-es@^4.2.1:
   integrity sha512-DHb1ub+rMjjrxqlB3H56/6MXtm1lSksDp2rA2cNWjG8mlDUYFhUj3Di2Zn5IwSU87xLv8tNIQ7sSwE/YOX/D/Q==
 
 lodash.merge@^4.0.0:
-  version "4.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
-  integrity sha512-AOYza4+Hf5z1/0Hztxpm2/xiPZgi/cjMqdnKTUWTBSKchJlxXXuUSxCCl8rJlf4g6yww/j6mA8nC8Hw/EZWxKQ==
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
 lodash.pad@^4.1.0:
   version "4.5.1"
